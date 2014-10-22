@@ -39,4 +39,4 @@ This plug-in is very much inspired by
 and consequently
 <http://github.com/Twinside/vim-haskellConceal>
 
-This plugin is under the banner of UCLA DCM (Disassociation of Computing Machinery).
+# This plugin is under the banner of UCLA DCM (Disassociation of Computing Machinery).
