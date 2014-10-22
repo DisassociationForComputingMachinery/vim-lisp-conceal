@@ -3,17 +3,14 @@ if exists('g:no_lisp_conceal') || !has('conceal') || &enc != 'utf-8'
     finish
 endif
 
-syntax match lispNiceOperator "\<in\>" conceal cchar=∈
-syntax match lispNiceOperator "\<or\>" conceal cchar=∨
-syntax match lispNiceOperator "\<and\>" conceal cchar=∧
-" include the space after “not” – if present – so that “not a” becomes “¬a”.
-" also, don't hide “not” behind  ‘¬’ if it is after “is ”.
-syntax match lispNiceOperator "\<not\>" conceal cchar=¬
-syntax match lispNiceOperator "+" conceal cchar=∑
-syntax match lispNiceOperator "sqrt" conceal cchar=√
-syntax match lispNiceOperator "pi" conceal cchar=π
-syntax match lispNiceOperator "sqrt" conceal cchar=√
-syntax match lispNiceOperator "lambda" conceal cchar=λ
+syntax keyword lispNiceOperator member conceal cchar=∈
+syntax keyword lispNiceOperator or conceal cchar=∨
+syntax keyword lispNiceOperator and conceal cchar=∧
+syntax keyword lispNiceOperator not conceal cchar=¬
+syntax keyword lispNiceOperator + conceal cchar=∑
+syntax keyword lispNiceOperator sqrt conceal cchar=√
+syntax keyword lispNiceOperator pi conceal cchar=π
+syntax keyword lispNiceOperator lambda conceal cchar=λ
 
 hi link lispNiceOperator Operator
 hi! link Conceal Operator
