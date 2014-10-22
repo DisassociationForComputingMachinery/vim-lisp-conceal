@@ -38,3 +38,5 @@ This plug-in is very much inspired by
 <https://github.com/ehamberg/vim-cute-python>
 and consequently
 <http://github.com/Twinside/vim-haskellConceal>
+
+This plugin is under the banner of UCLA DCM (Disassociation of Computing Machinery).
